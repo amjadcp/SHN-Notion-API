@@ -7,14 +7,20 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
+function notionPropertiesById(properties) {
+  return Object.values(properties).reduce((obj, property) => {
+    const { id, ...rest } = property
+    return { ...obj, [id]: rest }
+  }, {})
+}
 (async () => {
   const myPage = await notion.databases.query({
     database_id: "2beabde0c63f435aaf163d55f57654ee",
   });
+  console.log(myPage);
+  console.log();
   console.log(
-    myPage.results.forEach((element) => {
-      console.log(element);
-    })
+    notionPropertiesById(myPage.results[0].properties)
   );
 })();
 
