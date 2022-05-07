@@ -1,9 +1,17 @@
-const express = require('express')
-const app = express()
+// const express = require('express')
+// const app = express()
 const Discord = require('discord.js')
-const DiscordClient = new Discord.Client()
+const DiscordClient = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] })
 
+DiscordClient.on('ready', ()=>{
+    console.log(DiscordBot.user.tag);
+})
 
-process.env.DISCORD_TOKEN
+DiscordClient.on('message', (msg)=>{
+    if(msg.content==='hi'){
+        msg.reply('hello')
+    }
+})
 
-app.listen(8000, ()=>console.log('server is running'))
+DiscordClient.login('OTcyNDkzMzEzNzQxNTYxODg2.YnZ2-g.0XABXv9u4XujL8OL0I_pP1GonqQ')
+// app.listen(8000, ()=>console.log('server is running'))
