@@ -19,7 +19,7 @@ const getData = (notionPage) => {
   return notionPage.results.map((e) => {
     return {
       name: e.properties.Name.title[0].plain_text,
-      tasksCompleted: [...e.properties.Status.multi_select.map((e) => e.name)],
+      tasksCompleted: e.properties.Status.multi_select.map((e) => e.name),
     };
   });
 };
