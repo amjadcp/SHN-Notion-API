@@ -1,0 +1,24 @@
+{
+  "name": "shn-notion-api",
+  "version": "1.0.0",
+  "description": "a discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amjadcp/SHN-Notion-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amjadcp/SHN-Notion-API/issues"
+  },
+  "homepage": "https://github.com/amjadcp/SHN-Notion-API#readme",
+  "dependencies": {
+    "@notionhq/client": "^1.0.4",
+    "dotenv": "^16.0.0"
+  }
+}
