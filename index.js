@@ -7,38 +7,19 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 });
 
-function notionPropertiesById(properties) {
-  return Object.values(properties).reduce((obj, property) => {
-    const { id, ...rest } = property
-    return { ...obj, [id]: rest }
-  }, {})
-}
 (async () => {
   const myPage = await notion.databases.query({
     database_id: "2beabde0c63f435aaf163d55f57654ee",
   });
-  console.log(myPage);
-  console.log();
-  console.log(
-    notionPropertiesById(myPage.results[0].properties)
-  );
+  // console.log(myPage.results[0].properties.Status);
+  console.log(getData(myPage));
 })();
 
-function fromNotionObject(notionPage) {
-  const propertiesById = notionPropertiesById(notionPage.properties);
-
-  return {
-    id: notionPage.id,
-    title: propertiesById[process.env.NOTION_TITLE_ID].title[0].plain_text,
-    votes: propertiesById[process.env.NOTION_VOTES_ID].number,
-    tags: propertiesById[process.env.NOTION_TAGS_ID].multi_select.map(
-      (option) => {
-        return { id: option.id, name: option.name };
-      }
-    ),
-    isProject: propertiesById[process.env.NOTION_PROJECT_ID].checkbox,
-    description:
-      propertiesById[process.env.NOTION_DESCRIPTION_ID].rich_text[0].text
-        .content,
-  };
-}
+const getData = (notionPage) => {
+  return notionPage.results.map((e) => {
+    return {
+      name: e.properties.Name.title[0].plain_text,
+      tasksCompleted: [...e.properties.Status.multi_select.map((e) => e.name)],
+    };
+  });
+};
