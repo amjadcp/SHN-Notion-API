@@ -88,6 +88,7 @@ client.on("ready", async () => {
 
 client.on("message", async (msg) => {
   if (msg.mentions.has(client.user)) {
+    console.log('qqqq');
     const [rest, name, description, mentor] = msg.content.split(" ");
     await createPlanInNotion({
       name: name,
