@@ -2,6 +2,8 @@
 
 Create notion pages inside discord.
 
+![logo](previews/logo.png)
+
 ## How to setup
 
 1. Create a notion integration form [here](https://www.notion.so/my-integrations).
