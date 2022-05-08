@@ -12,12 +12,13 @@ client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) return;
 
   if (interaction.commandName === "create") {
+    interaction.reply("wait");
     const url = await createNotionPage({
       title: interaction.options.getString("title"),
-      icon: interaction.options.getString("icon"),
+
       content: interaction.options.getString("content"),
     });
-    await interaction.reply(url);
+    await interaction.channel.send(url);
   }
 });
 

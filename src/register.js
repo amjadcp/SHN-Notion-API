@@ -10,13 +10,13 @@ const commands = [
     type: 1,
     description: "create a notion page!",
     options: [
-      {
-        name: "icon",
-        description: "The icon for the notion page",
-        type: 3,
-        required: true,
-        options: ["😀", "😃", "😄", "😁", "😆"],
-      },
+      // {
+      //   name: "icon",
+      //   description: "The icon for the notion page",
+      //   type: 3,
+      //   required: true,
+      //   options: ["😀", "😃", "😄", "😁", "😆"],
+      // },
       {
         name: "title",
         description: "The title for the notion page",
