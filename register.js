@@ -31,7 +31,7 @@ const commands = [
   },
 ];
 
-const rest = new REST({ version: "9" }).setToken(process.env.NOTION_TOKEN);
+const rest = new REST({ version: "9" }).setToken(process.env.CLIENT_TOKEN);
 
 (async () => {
   try {
