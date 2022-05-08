@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/amjadcp/SHN-Notion-API/">
-    <img src="previews/logo.png" alt="Logo">
+    <img src="previews/logo_round.png" alt="Logo">
   </a>
 
   <h3 align="center">Oreo Bot</h3>
