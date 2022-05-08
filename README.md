@@ -1,8 +1,8 @@
-# Notion Bot
+# Oreo
 
 ![logo](previews/logo.png)
 
-A Simple Notion Bot that creates notion pages inside discord.
+Oreo is a simple Notion Bot that creates notion pages inside discord.
 
 ## About the project
 
