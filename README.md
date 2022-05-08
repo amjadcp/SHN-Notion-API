@@ -22,7 +22,7 @@ A Simple Notion Bot that creates notion pages inside discord.
 8. run `npm start` to run the bot
 
 ## Example Run:
-
+![3](previews/3.png)
 ![1](previews/1.png)
 ![2](previews/2.png)
 
