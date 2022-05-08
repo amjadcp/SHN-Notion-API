@@ -34,7 +34,7 @@ const createNotionPage = async ({ title, icon, content }) => {
     });
     return response.url;
   } catch (error) {
-    return "Error";
+    return false;
   }
 };
 

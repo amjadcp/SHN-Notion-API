@@ -1,5 +1,4 @@
 const { Client, Intents } = require("discord.js");
-const { SlashCommandBuilder } = require("@discordjs/builders");
 const { createNotionPage } = require("./notion");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 client.on("ready", () => {
