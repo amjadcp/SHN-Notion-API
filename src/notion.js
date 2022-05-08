@@ -15,6 +15,7 @@ const createNotionPage = async ({ title, content }) => {
       parent: {
         database_id: process.env.NOTION_DATABASE_ID,
       },
+
       // icon: {
       //   type: "emoji",
       //   emoji: icon,
