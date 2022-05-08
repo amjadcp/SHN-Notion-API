@@ -1,8 +1,14 @@
 # Notion Bot
 
-Create notion pages inside discord.
-
 ![logo](previews/logo.png)
+
+A Simple Notion Bot that creates notion pages inside discord.
+
+## About the project
+
+* It helps to create notion pages randomly from the discord server itself 
+* Helpful during discussions to save major decisions into a database
+* Makes event management easier 
 
 ## How to setup
 
@@ -24,6 +30,6 @@ Create notion pages inside discord.
 
 [Rijfas](https://github.com/rijfas)
 
-[Amjad CP](https://github.com/rijfas)
+[Amjad CP](https://github.com/amjadcp)
 
-[Nidha Shoukhath K P](https://github.com/rijfas)
+[Nidha Shoukhath K P](https://github.com/nidhashoukhath)
