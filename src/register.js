@@ -2,6 +2,8 @@ const { REST } = require("@discordjs/rest");
 
 const { Routes } = require("discord-api-types/v9");
 
+require("dotenv").config();
+
 const commands = [
   {
     name: "create",
@@ -37,10 +39,7 @@ const rest = new REST({ version: "9" }).setToken(process.env.CLIENT_TOKEN);
   try {
     console.log("Started refreshing application (/) commands.");
     await rest.put(
-      Routes.applicationGuildCommands(
-        "972493313741561886",
-        "868543226024439879"
-      ),
+      Routes.applicationGuildCommands(process.env.APP_ID, process.env.GUILD_ID),
       {
         body: commands,
       }
