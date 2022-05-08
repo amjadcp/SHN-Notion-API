@@ -1,8 +1,24 @@
-# Oreo
+<p align="center">
+  <a href="https://github.com/amjadcp/SHN-Notion-API/">
+    <img src="previews/logo.png" alt="Logo">
+  </a>
 
-![logo](previews/logo.png)
+  <h3 align="center">Oreo Bot</h3>
 
-Oreo is a simple Notion Bot that creates notion pages inside discord.
+  <p align="center">
+    Oreo is a simple Notion Bot that creates notion pages inside discord.
+    <br />
+    <a href="https://github.com/amjadcp/SHN-Notion-API/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://discord.com/api/oauth2/authorize?client_id=972507401922170920&scope=applications.commands">Add to your discord server</a>
+    ·
+    <a href="https://github.com/amjadcp/SHN-Notion-API//issues">Report Bug</a>
+    ·
+    <a href="https://github.com/amjadcp/SHN-Notion-API//issues">Request Feature</a>
+  </p>
+</p>
+
 
 ## About the project
 
