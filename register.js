@@ -1,4 +1,5 @@
 const { REST } = require("@discordjs/rest");
+
 const { Routes } = require("discord-api-types/v9");
 
 const commands = [
@@ -30,9 +31,7 @@ const commands = [
   },
 ];
 
-const rest = new REST({ version: "9" }).setToken(
-  "OTcyNDkzMzEzNzQxNTYxODg2.YnZ2-g.-BgPuSPdWD4KWJYPdaDPOuGsTJY"
-);
+const rest = new REST({ version: "9" }).setToken(process.env.NOTION_TOKEN);
 
 (async () => {
   try {
