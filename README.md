@@ -25,15 +25,15 @@ Oreo is a simple Notion Bot that creates notion pages inside discord.
 
 ### Running the `/create` command:
 
-![1](previews/1.png)
+![1](previews/11.png)
 
 ### Bot's reply with created notion page:
 
-![2](previews/2.png)
+![2](previews/22.png)
 
 ### Created notion page:
 
-![2](previews/3.png)
+![2](previews/33.png)
 
 ## Team Members
 
