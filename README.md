@@ -26,6 +26,9 @@
 - Helpful during discussions to save major decisions into a database
 - Makes event management easier
 
+## Project walkthrough
+[![Introduction and explanation](https://img.youtube.com/vi/1kyzK0nnYP8/0.jpg)](https://youtu.be/1kyzK0nnYP8)
+
 ## How to setup
 
 1. Create a notion integration form [here](https://www.notion.so/my-integrations).
